@@ -17,5 +17,5 @@ class Person
     is_of_age || parent_permission     
   end
 
-  private :of_age?  
+  private :of_age?
 end
