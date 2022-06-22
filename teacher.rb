@@ -10,3 +10,5 @@ class Teacher < Person
     true
   end
 end
+t = Teacher.new('math', 5)
+puts t.specialization.to_s
