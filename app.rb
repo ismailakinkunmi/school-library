@@ -54,9 +54,25 @@ class AppMethod
     print 'Name: '
     name = gets.chomp
     student = Student.new(age, name)
+    @people.push(student)
     print 'Has parent permission? [Y/N]: '
-    parent_permission = gets.chomp.downcase
-    @people.push(student) if parent_permission == 'n'
+    parent_permission = gets.chomp.downcase  
+    case parent_permission
+    when 'n'
+      student = Student.new(age, name)
+      @people << student
+      puts 'Students doesnt have parent permission, cant rent a book'
+    when 'y'
+      teacher = Teacher.new(age, name, specialization)
+      @people << teacher
+      puts
+      puts 'Student, created successfully'
+    end
+
+
+
+
+
   end
 
   def create_teacher
@@ -66,7 +82,7 @@ class AppMethod
     name = gets.chomp
     print 'Specialization: '
     specialization = gets.chomp
-    teacher = Teacher.new(age, specialization, name)
+    teacher = Teacher.new(age, name, specialization)
     @people.push(teacher)
   end
 
