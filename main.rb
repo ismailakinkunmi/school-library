@@ -9,7 +9,7 @@ class App
     puts 'Please choose an option by entering a number: '
 
     @content = {
-        1 => 'List all books',
+      1 => 'List all books',
       2 => 'List all people',
       3 => 'Create a person',
       4 => 'Create a book',
@@ -19,7 +19,6 @@ class App
     }
 
     @content.each { |index, string| puts "#{index} - #{string}" }
-
 
     Integer(gets.chomp)
   end
