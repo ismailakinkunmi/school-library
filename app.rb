@@ -54,7 +54,7 @@ class AppMethod
     student = Student.new(age, name)
     print 'Has parent permission? [Y/N]: '
     parent_permission = gets.chomp.downcase
-    @people.push(student) if parent_permission == 'n'
+    @people.push(student)     
   end
 
   def create_teacher
