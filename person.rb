@@ -13,11 +13,11 @@ class Person < Nameable
     super()
   end
 
-  def of_age
+  def of_age?
     @age >= 18
   end
 
-  def can_use_services
+  def can_use_services?
     of_age || parent_permission
   end
 
@@ -25,5 +25,5 @@ class Person < Nameable
     @name
   end
 
-  private :of_age
+  private :of_age?
 end
