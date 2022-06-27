@@ -16,9 +16,8 @@ class AppMethod
       puts 'No book added yet'
       return
     end
-    @books.map do |book|
-      puts "Title: \"#{book.title}\", Author: #{book.author}"
-    end
+
+    @books.each { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
   end
 
   def list_people
@@ -26,9 +25,8 @@ class AppMethod
       puts 'No person record created yet'
       return
     end
-    @people.map do |person|
-      puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
-    end
+
+    @people.map { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
   end
 
   def create_person
@@ -44,7 +42,7 @@ class AppMethod
       puts 'That is not a valid input'
       return
     end
-    # return
+
     puts 'Person created successfully'
   end
 
@@ -55,8 +53,8 @@ class AppMethod
     name = gets.chomp
     student = Student.new(age, name)
     print 'Has parent permission? [Y/N]: '
-    parent_permission = gets.chomp.downcase
-    @people.push(student) if parent_permission == 'n'
+    gets.chomp.downcase
+    @people.push(student)
   end
 
   def create_teacher
