@@ -53,8 +53,8 @@ class AppMethod
     name = gets.chomp
     student = Student.new(age, name)
     print 'Has parent permission? [Y/N]: '
-    parent_permission = gets.chomp.downcase
-    @people.push(student)     
+    gets.chomp.downcase
+    @people.push(student)
   end
 
   def create_teacher
