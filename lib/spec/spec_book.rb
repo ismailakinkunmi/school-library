@@ -1,0 +1,2 @@
+require './book'
+require './student'
