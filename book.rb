@@ -8,7 +8,7 @@ class Book
     @id = id.zero? ? Random.rand(1..1000) : id
     @title = title
     @author = author
-    @rentals = []    
+    @rentals = []
   end
 
   def add_rental(rental)
