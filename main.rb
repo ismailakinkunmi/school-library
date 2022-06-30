@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'json'
 require './app'
 require './lib/save_data'
@@ -72,3 +73,8 @@ def main
 end
 
 main
+=======
+require './app'
+app = App.new
+app.show_menu
+>>>>>>> 4ba66dec28894b51096ebf75612ca201b514eeb6
