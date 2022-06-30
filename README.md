@@ -2,7 +2,7 @@
 
 ## Built With
 
-- Ruby
+- Ruby, Spec
 
 ## Getting Started
 
