@@ -1,4 +1,4 @@
-require 'json'
+require 'json' # rubocop:todo Layout/EndOfLine
 require './app'
 require './lib/save_data'
 

@@ -1,4 +1,4 @@
-require_relative 'person'
+require_relative 'person' # rubocop:todo Layout/EndOfLine
 
 class Student < Person
   attr_reader :classroom

@@ -1,4 +1,4 @@
-require_relative 'rental'
+require_relative 'rental' # rubocop:todo Layout/EndOfLine
 
 class Book
   attr_reader :id

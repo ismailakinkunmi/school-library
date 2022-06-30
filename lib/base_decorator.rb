@@ -1,4 +1,4 @@
-require_relative 'nameable'
+require_relative 'nameable' # rubocop:todo Layout/EndOfLine
 
 class BaseDecorator < Nameable
   def initialize(nameable)

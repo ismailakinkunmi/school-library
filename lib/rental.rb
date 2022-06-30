@@ -1,4 +1,4 @@
-require_relative 'book'
+require_relative 'book' # rubocop:todo Layout/EndOfLine
 require_relative 'person'
 
 class Rental

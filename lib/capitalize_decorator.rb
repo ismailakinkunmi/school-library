@@ -1,4 +1,4 @@
-require_relative 'base_decorator'
+require_relative 'base_decorator' # rubocop:todo Layout/EndOfLine
 
 class CapitalizeDecorator < BaseDecorator
   def correct_name
