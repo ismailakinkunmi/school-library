@@ -1,4 +1,4 @@
-class CreateRental # rubocop:todo Layout/EndOfLine
+class CreateRental
   def inputs_book(books)
     puts 'Select which book you want to rent by entering its number'
     books.each_with_index { |book, index| puts "#{index}) Title: #{book.title}, Author: #{book.author}" }

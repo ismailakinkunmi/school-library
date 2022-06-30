@@ -1,4 +1,4 @@
-require_relative 'person' # rubocop:todo Layout/EndOfLine
+require_relative 'person'
 
 class Teacher < Person
   attr_accessor :specialization

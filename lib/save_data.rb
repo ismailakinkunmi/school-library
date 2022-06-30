@@ -1,4 +1,4 @@
-require_relative 'student' # rubocop:todo Layout/EndOfLine
+require_relative 'student'
 require_relative 'teacher'
 require_relative 'rental'
 

@@ -1,4 +1,4 @@
-class CreatePerson # rubocop:todo Layout/EndOfLine
+class CreatePerson
   def create_a_person
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     option = gets.chomp

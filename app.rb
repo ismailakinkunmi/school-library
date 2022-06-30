@@ -1,4 +1,4 @@
-require_relative 'lib/capitalize_decorator' # rubocop:todo Layout/EndOfLine
+require_relative 'lib/capitalize_decorator'
 require_relative 'lib/trimmer_decorator'
 require_relative 'lib/create_persons'
 require_relative 'lib/create_rental'

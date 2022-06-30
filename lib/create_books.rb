@@ -1,4 +1,4 @@
-class CreateBook # rubocop:todo Layout/EndOfLine
+class CreateBook
   def inputs_book
     print 'Title: '
     title = gets.chomp

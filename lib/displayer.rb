@@ -1,4 +1,4 @@
-class Displayer # rubocop:todo Layout/EndOfLine
+class Displayer
   def display_persons_list(persons)
     puts 'Database is empty! Add a person.' if persons.empty?
     persons.each do |person|
